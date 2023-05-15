@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+  
+    a{
+        text-decoration: none;
+        font-weight: 500;
+    h3 {
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 9px;
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+    }
+}
+  
+    nav {
+      position: absolute;
+      top: 80px;
+      left: 10;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: white;
+      display: none;
+      z-index: 1;
+  
+      &.responsive_nav {
+        display: block;
+      }
+  
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: black;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        display: block;
+        padding: 20px;
+  
+        &:hover {
+          color: rgb(230, 204, 178);
+        }
+      }
+  
+      button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        color: black;
+        display: none;
+  
+        &.nav-close-btn {
+          top: 10px;
+          right: 10px;
+        }
+        
+      }
+    }
+  
+    button {
+      width: 30px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+  
+      svg {
+        font-size: 30px;
+        color: black;
+        transition: color 0.2s ease;
+  
+        &:hover {
+          color: rgb(230, 204, 178);
+        }
+      }
+  
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  
+    @media (min-width: 768px) {
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height: auto;
+        position: static;
+        background: none;
+  
+        a {
+          display: inline-block;
+          padding: 0 10px;
+  
+          &:hover {
+            color: rgb(230, 204, 178);
+          }
+        }
+  
+        button {
+          display: none;
+        }
+      }
+    }
+  }

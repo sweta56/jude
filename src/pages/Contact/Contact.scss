@@ -1,0 +1,80 @@
+// h1{
+//         font-size: 48px;
+//         font-weight: 500;
+//       letter-spacing: 9px;
+//       color: rgb(230, 204, 178);
+// }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: white;
+    
+    @media only screen and (max-width: 768px) {
+      height: auto;
+      padding: 1rem;
+    }
+    .cu{
+      font-size: 48px;
+      font-weight: 500;
+      letter-spacing: 9px;
+      color: rgb(230, 204, 178);
+    }
+  }
+  
+  .card-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    width: 50%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  
+    &:hover {
+      background-color: rgb(247, 245, 245);
+    }
+  
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      b{
+        font-weight: 800;
+      }
+    }
+    .icons{
+        margin-top: 10px;
+        span{
+          margin-right: 10px;
+          a {
+            margin-left:8%;
+          }          
+        }
+      }
+      .images {
+        flex: 1;
+        margin-left: 2rem;
+        
+        @media only screen and (max-width: 768px) {
+          margin-left: 0;
+        }
+        
+        img {
+          max-width: 100%;
+        }
+      }
+  }
+  
+
+
+
