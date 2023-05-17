@@ -13,11 +13,9 @@ const Desc = () => {
         id pharetra orci tellus ut ex. Sed eu luctus odio. Aliquam dignissim lorem vel ex bibendum, quis facilisis leo
         vestibulum.
       </p>
-      <button>
-                <Link to="/products/1" className="link">
-                  Explore More
-                </Link>
-              </button>
+      <Link to="/products/1" className="link">
+          <button>Explore More</button>
+      </Link>
     </div>
   )
 }

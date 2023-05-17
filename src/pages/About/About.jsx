@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './About.scss';
 import img4 from "../../components/images/img4.JPG"
 
 const About = () => {
   const data=[img4]
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <h2>ABOUT US</h2>

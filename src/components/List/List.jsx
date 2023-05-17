@@ -1,51 +1,17 @@
 import React from 'react'
 import "./List.scss"
-import img4 from '../images/img4.JPG';
-import img2 from '../images/img2.JPG';
-import img3 from '../images/img3.JPG';
-import img5 from '../images/img5.JPG';
-import img6 from '../images/img6.JPG';
-import img7 from '../images/img7.JPG';
+import useFetch from "../../hooks/useFetch";
 import Card from '../Card/Card';
 
-const List = () => {
-    const data = [
-        {
-          id : 1,
-          img: img4,
-          img2: img2,
-          title: "T-shirt & Pants",
-          isNew:true,
-        },
-        {
-          id : 2,
-          img: img3,
-          img2: img2,
-          title: "T-shirt",
-          isNew:true,
-        },
-        {
-          id : 3,
-          img: img7,
-          img2: img6,
-          title: "Pants",
-        },{
-          id : 4,
-          img: img5,
-          img2: img6,
-          title: "Pants",
-        },{
-          id : 5,
-          img: img6,
-          img2: img7,
-          title: "Pants",
-        }
-      ]
+const List = (catId) => {
+  const { data, loading } = useFetch(
+    `/products?populate=*&[filters][categories][id]=${catId}`
+    );
   return (
-    <div className='list'>{data?.map(item=>(
-        <Card item={item}  key={item.id}/>
-    ))}
-
+    <div className="list">
+      {loading
+        ? "loading"
+        : data?.map((item) => <Card item={item} key={item.id} />)}
     </div>
   )
 }

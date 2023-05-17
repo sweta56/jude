@@ -29,8 +29,8 @@ const Footer = () => {
         </div>
         <div className="item">
           <h1>CATEGORIES</h1>
-          <span> <a href="/products/1">New Arrivals</a></span>
-          <span> <a href="/products/1">Men</a></span>
+          <span> <a href="/products?isNew=true">New Arrivals</a></span>
+          <span> <a href="/products">Men</a></span>
         </div>
         <div className="item">
           <h1>WHERE ARE WE SHIPPING TO?</h1>

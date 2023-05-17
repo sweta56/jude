@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "./ComingSoon.scss"
 
 const ComingSoon = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="coming-soon-page">
       <h1 className="coming-soon-header">More items are <br/>

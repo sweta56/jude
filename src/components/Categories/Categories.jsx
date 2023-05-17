@@ -19,11 +19,9 @@ const Categories = () => {
             src={data[4]}
             alt=""
           />
-          <button>
             <Link className="link" to="/products/1">
-              New Season
+              <button>New Season</button>
             </Link>
-          </button>
         </div>
       </div>
       <div className="col">
@@ -33,11 +31,9 @@ const Categories = () => {
             src={data[2]}
             alt=""
           />
-          <button>
             <Link to="/products/1" className="link">
-              Men
+              <button>Men</button>
             </Link>
-          </button>
         </div>
       </div>
       <div className="col col-l">
@@ -48,11 +44,9 @@ const Categories = () => {
                 src={data[3]}
                 alt=""
               />
-              <button>
                 <Link to="/comingsoon" className="link">
-                  Sale
+                  <button>Sale</button>
                 </Link>
-              </button>
             </div>
           </div>
           <div className="col">
@@ -62,11 +56,9 @@ const Categories = () => {
                 src={data[6]}
                 alt=""
               />
-              <button>
                 <Link to="/comingsoon" className="link">
-                  Coming Soon
+                  <button>Coming Soon</button>
                 </Link>
-              </button>
             </div>
           </div>
         </div>
